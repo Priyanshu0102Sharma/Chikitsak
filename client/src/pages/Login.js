@@ -36,7 +36,7 @@ const Login = () => {
         onFinish={onfinishHandler}
         className="register-form"
       >
-        <h3 className="text-center text-white font-weight-bold">Login From</h3>
+        <h3 className="text-center text-white font-weight-bold">Login Form</h3>
 
         <Form.Item label="Email" name="email">
           <Input type="email" required />
