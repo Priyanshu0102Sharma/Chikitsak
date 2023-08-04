@@ -1,5 +1,6 @@
 .main {
   padding: 10px;
+  min-height: fit-content;
   height: 100vh;
 }
 .layout {
@@ -8,13 +9,14 @@
 }
 
 .sidebar {
-  min-height: 100%;
+ height: 100vh;
   width: 300px;
   border-radius: 5px;
-  background-color: rgb(51, 1, 1);
+  background-color: rgb(23, 5, 36);
   box-shadow: 0 0 2px gray;
   margin-right: 20px;
   color: white;
+  border-radius: 2.5rem;
 }
 
 .content {
@@ -26,17 +28,23 @@
   height: 10vh;
   margin-bottom: 20px;
   box-shadow: 0 0 2px gray;
-  background: linear-gradient(-45deg, #F2EEE3, #E9D1D0, #FAE0BA, #EB8C73, #F0DED1, #DEC4A7);
+  background: linear-gradient(0deg, rgba(160,77,131,1) 0%, rgba(20,27,99,1) 67%, rgba(131,16,53,1) 100%);
   background-size: 400% 400%;
   animation: gradient 20s ease infinite;
+border-radius: 2.5rem;
+
 }
 .body {
-  height: 85vh;
+  min-height: fit-content;
+  padding: 2rem;
+  display: block;
+  margin: auto;
   margin-bottom: 20px;
   box-shadow: 0 0 2px gray;
-  background: linear-gradient(-45deg, #F2EEE3, #E9D1D0, #FAE0BA, #be2f0b, #F0DED1, #DEC4A7);
+  background: linear-gradient(0deg, rgba(160,77,131,1) 0%, rgba(20,27,99,1) 67%, rgba(131,16,53,1) 100%);
   background-size: 400% 400%;
   animation: gradient 20s ease infinite;
+  border-radius: 2.5rem;
 }
 .logo h6 {
   font-size: 1.5rem;
@@ -59,12 +67,14 @@
   margin: 0 15px;
 }
 .active {
-  background-color: white;
-  padding: 10px;
+  background-color: rgb(199, 141, 141);
+  padding: 5px;
+  border-radius: 25px;
 }
 .active a,
 .active i {
   color: rgb(51, 1, 1);
+ 
 }
 
 .header-content {
@@ -73,6 +83,7 @@
   height: 50px;
   justify-content: flex-end;
   margin: 0 15px;
+  border-radius: 2.5rem;
 }
 
 .header-content i {
@@ -85,4 +96,70 @@
   color: blue;
   margin: 0 10px;
   text-transform: uppercase;
+}
+.card{
+  border-radius: 1.5rem;
+}
+
+@media (max-width: 1024px)
+{
+.main{
+  display: flex;
+}
+.forms_Data{
+  height: fit-content;
+}
+.layout{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+}
+.sidebar{
+  width: 100%;
+  border-radius: 0px;
+  margin: 0px;
+  padding: 0px;
+  border-radius: 1rem;
+  height: fit-content;
+  padding-bottom: 0.5rem;
+
+}
+.menu{
+  display: flex;
+  justify-content: center;
+ margin-top: 0px;
+ flex-wrap: wrap;
+ border-radius: 1rem;
+
+
+}
+.menu-item a{
+  font-size: 15px;
+  padding: 0.1rem;
+  
+}
+.active{
+  border-radius: 15px;
+  padding: 0px;
+  margin-left: 5px;
+}
+.menu-item i{
+  font-size: 10px;
+  margin: 0px;
+  padding-left: 0.5rem;
+}
+.header{
+  margin-top: 2rem;
+}
+.logo{
+  padding: 0px;
+  margin: 0px;
+}
+.card{
+  margin: auto;
+}
+.header-content a{
+  text-align: center;
+}
 }

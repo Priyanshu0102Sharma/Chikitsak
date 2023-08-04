@@ -3,6 +3,7 @@ import axios from "axios";
 import Layout from "./../components/Layout";
 import moment from "moment";
 import { Table } from "antd";
+import './Table.css'
 
 const Appointments = () => {
   const [appointments, setAppointments] = useState([]);
@@ -60,6 +61,8 @@ const Appointments = () => {
       dataIndex: "status",
     },
   ];
+
+
 
   return (
     <Layout>

@@ -1,0 +1,14 @@
+@media (max-width: 995px)
+{
+    th{
+        display: none;
+    }
+    td{
+        display:block;
+    }
+    td::before{
+        content:attr(data-cell) " ";
+        font-weight: 700;
+        text-transform: capitalize;
+    }
+}
